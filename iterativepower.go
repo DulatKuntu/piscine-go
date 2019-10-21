@@ -4,7 +4,7 @@ func IterativePower(nb int, power int) int {
 	if power < 0 {
 		return 0
 	} else if power == 0 {
-		return nb
+		return 1
 	} else {
 		result := nb
 		for i := 1; i <= power-1; i++ {
