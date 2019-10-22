@@ -9,7 +9,7 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune(rune(0))
 		return
 	}
-	var strrune = []rune{' '}
+	var strrune []rune
 	for i := 0; n != 0; i++ {
 		strrune = append(strrune, rune(n%10+48))
 		n = n / 10
