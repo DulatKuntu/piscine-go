@@ -1,9 +1,12 @@
 package piscine
 
 func NRune(s string, n int) rune {
-	if n <= 0 {
-		return 0
+	var run rune
+	for index, item := range s {
+		if index == (n - 1) {
+			run = item
+		}
 	}
-	run := []rune(s)
-	return run[n-1]
+
+	return run
 }
