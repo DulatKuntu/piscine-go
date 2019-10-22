@@ -29,9 +29,10 @@ func Index(s string, toFind string) int {
 				} else {
 					return -1
 				}
-				if res == true {
-					return result
-				}
+
+			}
+			if res == true {
+				return result
 			}
 		}
 	}
