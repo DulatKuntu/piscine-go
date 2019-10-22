@@ -17,7 +17,7 @@ func Index(s string, toFind string) int {
 			result = index
 			res = true
 			for i := range run {
-				if (result + i) < StrLen(s) {
+				if (result + i + 1) < StrLen(s) {
 					if run[i] != strrun[result+i] {
 						res = false
 					}
