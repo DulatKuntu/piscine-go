@@ -4,7 +4,7 @@ func TrimAtoi(s string) int {
 	var newstr string
 
 	for _, letter := range s {
-		if letter == '-' && len(newstr) == 0 {
+		if letter == '-' && StrLen(newstr) == 0 {
 			newstr = newstr + string(letter)
 		}
 		if letter > 47 && letter < 58 {
