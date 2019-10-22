@@ -1,8 +1,11 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	if StrLen(s) == 0 || StrLen(toFind) == 0 {
+	if StrLen(s) == 0 {
 		return -1
+	}
+	if StrLen(toFind) == 0 {
+		return 0
 	}
 	strrun := []rune(s)
 	run := []rune(toFind)
