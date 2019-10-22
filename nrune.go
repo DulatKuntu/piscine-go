@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 func NRune(s string, n int) rune {
 	run := []rune(s)
