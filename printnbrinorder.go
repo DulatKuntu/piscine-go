@@ -6,7 +6,7 @@ func PrintNbrInOrder(n int) {
 	if n < 0 {
 		return
 	} else if n == 0 {
-		z01.PrintRune(rune(0))
+		z01.PrintRune(rune('0'))
 		return
 	}
 	var strrune []rune
