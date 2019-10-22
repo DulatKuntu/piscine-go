@@ -1,11 +1,30 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	run := FirstRune(toFind)
+	strrun := []rune(s)
+	run := []rune(toFind)
+	var res bool
+	run1 := FirstRune(toFind)
+	var result int
 	for index, item := range s {
-		if item == run {
-			return index
+		if item == run1 {
+			result = index
+			res = true
+			for i := range run {
+				if (result + i) < StrLen(s) {
+					if run[i] != strrun[result+i] {
+						res = false
+					}
+				} else {
+					return -1
+				}
+			}
 		}
 	}
-	return -1
+	if res == true {
+		return result
+	} else {
+		return -1
+	}
+
 }
