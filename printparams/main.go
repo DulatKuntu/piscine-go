@@ -6,10 +6,13 @@ import "os"
 
 func main() {
 	for i := range os.Args {
-		for _, letter := range os.Args[i] {
-			z01.PrintRune(letter)
+		if i > 0 {
+			for _, letter := range os.Args[i] {
+				z01.PrintRune(letter)
+			}
+			z01.PrintRune('\n')
 		}
-		z01.PrintRune('\n')
+
 	}
 
 }
