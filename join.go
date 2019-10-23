@@ -6,7 +6,7 @@ func Join(strs []string, sep string) string {
 		if i == 0 {
 			str = str + word
 		} else {
-			str = sep + str + word
+			str = str + sep + word
 		}
 	}
 	return str
