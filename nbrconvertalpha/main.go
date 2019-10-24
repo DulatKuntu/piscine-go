@@ -56,14 +56,14 @@ func main() {
 				res = true
 			}
 			if res {
-				if Atoi(num) < 27 {
+				if Atoi(num) < 27 && Atoi(num) > 0 {
 					byt[i] = byte(Atoi(num) + 64)
 					z01.PrintRune(rune(byt[i]))
 				} else {
 					z01.PrintRune(' ')
 				}
 			} else {
-				if Atoi(num) < 27 {
+				if Atoi(num) < 27 && Atoi(num) > 0 {
 					byt[i] = byte(Atoi(num) + 96)
 					z01.PrintRune(rune(byt[i]))
 				} else {
