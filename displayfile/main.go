@@ -6,18 +6,21 @@ import "fmt"
 
 func main() {
 	counter := 0
-
-	for i := range os.Args {
-		i = i
+	res := false
+	for _, word := range os.Args {
+		if word == "quest8.txt" {
+			res = true
+		}
 		counter++
 	}
-
-	if counter < 2 {
+	if counter == 1 {
 		fmt.Println("File name missing")
-	} else if counter > 2 {
+	}
+	if counter > 2 {
 		fmt.Println("Too many arguments")
 	} else {
-
-		fmt.Println("Almost there!!")
+		if res {
+			fmt.Println("Almost there!!")
+		}
 	}
 }
