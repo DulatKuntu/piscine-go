@@ -10,8 +10,8 @@ func printStr(str string) {
 
 		z01.PrintRune(letter)
 
-		z01.PrintRune('\n')
 	}
+	z01.PrintRune('\n')
 }
 
 func isEven(nbr int) bool {
