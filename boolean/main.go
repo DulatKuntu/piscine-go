@@ -5,12 +5,13 @@ import "github.com/01-edu/z01"
 import "os"
 
 func printStr(str string) {
-	arrayStr := []rune(str)
 
-	for i := 0; i < len(arrayStr); i++ {
-		z01.PrintRune(arrayStr[i])
+	for _, letter := range str {
+
+		z01.PrintRune(rune(letter))
+
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
 
 func isEven(nbr int) bool {
